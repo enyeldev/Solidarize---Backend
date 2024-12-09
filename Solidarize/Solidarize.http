@@ -1,0 +1,6 @@
+@Solidarize_HostAddress = http://localhost:5194
+
+GET {{Solidarize_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

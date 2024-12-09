@@ -1,0 +1,17 @@
+C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Persistence\bin\Debug\net8.0\Solidarize.Persistence.deps.json
+C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Persistence\bin\Debug\net8.0\Solidarize.Persistence.dll
+C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Persistence\bin\Debug\net8.0\Solidarize.Persistence.pdb
+C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Persistence\bin\Debug\net8.0\Solidarize.Domain.dll
+C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Persistence\bin\Debug\net8.0\Solidarize.Domain.pdb
+C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Persistence\obj\Debug\net8.0\Solidarize.Persistence.csproj.AssemblyReference.cache
+C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Persistence\obj\Debug\net8.0\Solidarize.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Persistence\obj\Debug\net8.0\Solidarize.Persistence.AssemblyInfoInputs.cache
+C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Persistence\obj\Debug\net8.0\Solidarize.Persistence.AssemblyInfo.cs
+C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Persistence\obj\Debug\net8.0\Solidarize.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Persistence\obj\Debug\net8.0\Solidari.2BB764E1.Up2Date
+C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Persistence\obj\Debug\net8.0\Solidarize.Persistence.dll
+C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Persistence\obj\Debug\net8.0\refint\Solidarize.Persistence.dll
+C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Persistence\obj\Debug\net8.0\Solidarize.Persistence.pdb
+C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Persistence\obj\Debug\net8.0\ref\Solidarize.Persistence.dll
+C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Persistence\bin\Debug\net8.0\Solidarize.Persistence.runtimeconfig.json
+C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Persistence\obj\Debug\net8.0\Solidarize.Persistence.genruntimeconfig.cache

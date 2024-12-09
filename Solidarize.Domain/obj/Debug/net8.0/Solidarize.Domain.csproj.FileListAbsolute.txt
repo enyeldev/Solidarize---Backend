@@ -1,0 +1,14 @@
+C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Domain\bin\Debug\net8.0\Solidarize.Domain.deps.json
+C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Domain\bin\Debug\net8.0\Solidarize.Domain.runtimeconfig.json
+C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Domain\bin\Debug\net8.0\Solidarize.Domain.dll
+C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Domain\bin\Debug\net8.0\Solidarize.Domain.pdb
+C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Domain\obj\Debug\net8.0\Solidarize.Domain.csproj.AssemblyReference.cache
+C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Domain\obj\Debug\net8.0\Solidarize.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Domain\obj\Debug\net8.0\Solidarize.Domain.AssemblyInfoInputs.cache
+C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Domain\obj\Debug\net8.0\Solidarize.Domain.AssemblyInfo.cs
+C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Domain\obj\Debug\net8.0\Solidarize.Domain.csproj.CoreCompileInputs.cache
+C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Domain\obj\Debug\net8.0\Solidarize.Domain.dll
+C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Domain\obj\Debug\net8.0\refint\Solidarize.Domain.dll
+C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Domain\obj\Debug\net8.0\Solidarize.Domain.pdb
+C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Domain\obj\Debug\net8.0\Solidarize.Domain.genruntimeconfig.cache
+C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Domain\obj\Debug\net8.0\ref\Solidarize.Domain.dll

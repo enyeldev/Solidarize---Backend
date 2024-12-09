@@ -1,0 +1,11 @@
+C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Common\bin\Debug\net8.0\Solidarize.Common.deps.json
+C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Common\bin\Debug\net8.0\Solidarize.Common.dll
+C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Common\bin\Debug\net8.0\Solidarize.Common.pdb
+C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Common\obj\Debug\net8.0\Solidarize.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Common\obj\Debug\net8.0\Solidarize.Common.AssemblyInfoInputs.cache
+C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Common\obj\Debug\net8.0\Solidarize.Common.AssemblyInfo.cs
+C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Common\obj\Debug\net8.0\Solidarize.Common.csproj.CoreCompileInputs.cache
+C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Common\obj\Debug\net8.0\Solidarize.Common.dll
+C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Common\obj\Debug\net8.0\refint\Solidarize.Common.dll
+C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Common\obj\Debug\net8.0\Solidarize.Common.pdb
+C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Common\obj\Debug\net8.0\ref\Solidarize.Common.dll

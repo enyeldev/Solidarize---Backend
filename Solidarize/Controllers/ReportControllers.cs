@@ -1,0 +1,27 @@
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Solidarize.Application.Interfaces;
+using Solidarize.Common;
+using Solidarize.Common.Dto;
+
+namespace Solidarize.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class ReportControllers : ControllerBase
+    {
+        private readonly IReportServices _services;
+
+        public ReportControllers(IReportServices services)
+        {
+            _services = services;
+        }
+
+        [HttpGet("ObtenerReporte")]
+        public async Task<ActionResult<Response<ReportDto>>> GetReport()
+        {
+            return await _services.GenerateReport();
+        }
+
+    }
+}

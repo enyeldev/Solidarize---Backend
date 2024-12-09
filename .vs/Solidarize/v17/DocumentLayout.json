@@ -1,0 +1,121 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\medra\\Documents\\Clases\\C-5\\Programacion II\\Proyecto Final\\proyectoFinal - Api\\Solidarize\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{73C82BCD-7366-49F6-8DF8-A8AC38D43D11}|Solidarize.Common\\Solidarize.Common.csproj|c:\\users\\medra\\documents\\clases\\c-5\\programacion ii\\proyecto final\\proyectofinal - api\\solidarize\\solidarize.common\\dto\\seasondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73C82BCD-7366-49F6-8DF8-A8AC38D43D11}|Solidarize.Common\\Solidarize.Common.csproj|solutionrelative:solidarize.common\\dto\\seasondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73C82BCD-7366-49F6-8DF8-A8AC38D43D11}|Solidarize.Common\\Solidarize.Common.csproj|c:\\users\\medra\\documents\\clases\\c-5\\programacion ii\\proyecto final\\proyectofinal - api\\solidarize\\solidarize.common\\dto\\reportdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73C82BCD-7366-49F6-8DF8-A8AC38D43D11}|Solidarize.Common\\Solidarize.Common.csproj|solutionrelative:solidarize.common\\dto\\reportdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73C82BCD-7366-49F6-8DF8-A8AC38D43D11}|Solidarize.Common\\Solidarize.Common.csproj|c:\\users\\medra\\documents\\clases\\c-5\\programacion ii\\proyecto final\\proyectofinal - api\\solidarize\\solidarize.common\\dto\\donordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73C82BCD-7366-49F6-8DF8-A8AC38D43D11}|Solidarize.Common\\Solidarize.Common.csproj|solutionrelative:solidarize.common\\dto\\donordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73C82BCD-7366-49F6-8DF8-A8AC38D43D11}|Solidarize.Common\\Solidarize.Common.csproj|c:\\users\\medra\\documents\\clases\\c-5\\programacion ii\\proyecto final\\proyectofinal - api\\solidarize\\solidarize.common\\dto\\donationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73C82BCD-7366-49F6-8DF8-A8AC38D43D11}|Solidarize.Common\\Solidarize.Common.csproj|solutionrelative:solidarize.common\\dto\\donationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2542187E-BDD4-4B86-A5BC-88EB05467B7E}|Solidarize\\Solidarize.csproj|c:\\users\\medra\\documents\\clases\\c-5\\programacion ii\\proyecto final\\proyectofinal - api\\solidarize\\solidarize\\controllers\\donationcontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2542187E-BDD4-4B86-A5BC-88EB05467B7E}|Solidarize\\Solidarize.csproj|solutionrelative:solidarize\\controllers\\donationcontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2AA2FFF-354B-4060-A1BA-75A162115FA9}|Solidarize.Application\\Solidarize.Application.csproj|c:\\users\\medra\\documents\\clases\\c-5\\programacion ii\\proyecto final\\proyectofinal - api\\solidarize\\solidarize.application\\services\\donationservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2AA2FFF-354B-4060-A1BA-75A162115FA9}|Solidarize.Application\\Solidarize.Application.csproj|solutionrelative:solidarize.application\\services\\donationservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SeasonDto.cs",
+              "DocumentMoniker": "C:\\Users\\medra\\Documents\\Clases\\C-5\\Programacion II\\Proyecto Final\\proyectoFinal - Api\\Solidarize\\Solidarize.Common\\Dto\\SeasonDto.cs",
+              "RelativeDocumentMoniker": "Solidarize.Common\\Dto\\SeasonDto.cs",
+              "ToolTip": "C:\\Users\\medra\\Documents\\Clases\\C-5\\Programacion II\\Proyecto Final\\proyectoFinal - Api\\Solidarize\\Solidarize.Common\\Dto\\SeasonDto.cs",
+              "RelativeToolTip": "Solidarize.Common\\Dto\\SeasonDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T02:59:07.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReportDto.cs",
+              "DocumentMoniker": "C:\\Users\\medra\\Documents\\Clases\\C-5\\Programacion II\\Proyecto Final\\proyectoFinal - Api\\Solidarize\\Solidarize.Common\\Dto\\ReportDto.cs",
+              "RelativeDocumentMoniker": "Solidarize.Common\\Dto\\ReportDto.cs",
+              "ToolTip": "C:\\Users\\medra\\Documents\\Clases\\C-5\\Programacion II\\Proyecto Final\\proyectoFinal - Api\\Solidarize\\Solidarize.Common\\Dto\\ReportDto.cs",
+              "RelativeToolTip": "Solidarize.Common\\Dto\\ReportDto.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T02:58:19.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DonorDto.cs",
+              "DocumentMoniker": "C:\\Users\\medra\\Documents\\Clases\\C-5\\Programacion II\\Proyecto Final\\proyectoFinal - Api\\Solidarize\\Solidarize.Common\\Dto\\DonorDto.cs",
+              "RelativeDocumentMoniker": "Solidarize.Common\\Dto\\DonorDto.cs",
+              "ToolTip": "C:\\Users\\medra\\Documents\\Clases\\C-5\\Programacion II\\Proyecto Final\\proyectoFinal - Api\\Solidarize\\Solidarize.Common\\Dto\\DonorDto.cs",
+              "RelativeToolTip": "Solidarize.Common\\Dto\\DonorDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T02:57:49.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DonationDto.cs",
+              "DocumentMoniker": "C:\\Users\\medra\\Documents\\Clases\\C-5\\Programacion II\\Proyecto Final\\proyectoFinal - Api\\Solidarize\\Solidarize.Common\\Dto\\DonationDto.cs",
+              "RelativeDocumentMoniker": "Solidarize.Common\\Dto\\DonationDto.cs",
+              "ToolTip": "C:\\Users\\medra\\Documents\\Clases\\C-5\\Programacion II\\Proyecto Final\\proyectoFinal - Api\\Solidarize\\Solidarize.Common\\Dto\\DonationDto.cs",
+              "RelativeToolTip": "Solidarize.Common\\Dto\\DonationDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T02:57:02.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DonationControllers.cs",
+              "DocumentMoniker": "C:\\Users\\medra\\Documents\\Clases\\C-5\\Programacion II\\Proyecto Final\\proyectoFinal - Api\\Solidarize\\Solidarize\\Controllers\\DonationControllers.cs",
+              "RelativeDocumentMoniker": "Solidarize\\Controllers\\DonationControllers.cs",
+              "ToolTip": "C:\\Users\\medra\\Documents\\Clases\\C-5\\Programacion II\\Proyecto Final\\proyectoFinal - Api\\Solidarize\\Solidarize\\Controllers\\DonationControllers.cs",
+              "RelativeToolTip": "Solidarize\\Controllers\\DonationControllers.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwBwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T01:00:59.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DonationServices.cs",
+              "DocumentMoniker": "C:\\Users\\medra\\Documents\\Clases\\C-5\\Programacion II\\Proyecto Final\\proyectoFinal - Api\\Solidarize\\Solidarize.Application\\Services\\DonationServices.cs",
+              "RelativeDocumentMoniker": "Solidarize.Application\\Services\\DonationServices.cs",
+              "ToolTip": "C:\\Users\\medra\\Documents\\Clases\\C-5\\Programacion II\\Proyecto Final\\proyectoFinal - Api\\Solidarize\\Solidarize.Application\\Services\\DonationServices.cs",
+              "RelativeToolTip": "Solidarize.Application\\Services\\DonationServices.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwEIAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T00:49:12.405Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
