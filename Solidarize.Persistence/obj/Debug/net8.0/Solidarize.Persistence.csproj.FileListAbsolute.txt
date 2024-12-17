@@ -15,3 +15,4 @@ C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal
 C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Persistence\obj\Debug\net8.0\ref\Solidarize.Persistence.dll
 C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Persistence\bin\Debug\net8.0\Solidarize.Persistence.runtimeconfig.json
 C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Persistence\obj\Debug\net8.0\Solidarize.Persistence.genruntimeconfig.cache
+C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Persistence\obj\Debug\net8.0\Solidarize.Persistence.sourcelink.json

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Solidarize.Common")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2b69c9d51a194a876432616cecc9a39096e2e281")]
 [assembly: System.Reflection.AssemblyProductAttribute("Solidarize.Common")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Solidarize.Common")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

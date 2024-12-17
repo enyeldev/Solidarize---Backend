@@ -9,3 +9,4 @@ C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal
 C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Common\obj\Debug\net8.0\refint\Solidarize.Common.dll
 C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Common\obj\Debug\net8.0\Solidarize.Common.pdb
 C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Common\obj\Debug\net8.0\ref\Solidarize.Common.dll
+C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Common\obj\Debug\net8.0\Solidarize.Common.sourcelink.json

@@ -12,3 +12,4 @@ C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal
 C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Domain\obj\Debug\net8.0\Solidarize.Domain.pdb
 C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Domain\obj\Debug\net8.0\Solidarize.Domain.genruntimeconfig.cache
 C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Domain\obj\Debug\net8.0\ref\Solidarize.Domain.dll
+C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Domain\obj\Debug\net8.0\Solidarize.Domain.sourcelink.json

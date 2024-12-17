@@ -11,6 +11,7 @@ namespace Solidarize.Infrastructure.Mappers
         public DonorMapper()
         {
             CreateMap<AddDonorRequest, Donors>().ReverseMap();
+            CreateMap<EditDonorRequest, Donors>().ReverseMap();
             CreateMap<Donors, DonorDto>().ReverseMap();
         }
     }

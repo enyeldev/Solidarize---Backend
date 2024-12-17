@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Solidarize.Application.Interfaces;
 using Solidarize.Common;
 using Solidarize.Common.Dto;
@@ -20,28 +19,57 @@ namespace Solidarize.Controllers
 
 
         [HttpGet("ObtenerSeasons")]
-        public async Task<ActionResult<Response<List<SeasonDto>>>> GetDonors()
+        public async Task<ActionResult<Response<List<SeasonDto>>>> GetSeasons()
         {
-            return await _services.GetSeasons();
+            var response = await _services.GetSeasons();
+
+            if (!response.Success)
+            {
+                return BadRequest(response);
+            }
+
+            return Ok(response);
         }
 
 
-        [HttpPost("AgregarDonante")]
-        public async Task<ActionResult<Response<SeasonDto>>> AddDonor(AddSeasonRequest request)
+        [HttpPost("AgregarSeason")]
+        public async Task<ActionResult<Response<SeasonDto>>> AddSeason(AddSeasonRequest request)
         {
-            return await _services.AddSeason(request);
+            var response = await _services.AddSeason(request);
+            if (!response.Success)
+            {
+                return BadRequest(response);
+            }
+
+            return Ok(response);
         }
 
-        [HttpPut("EditarDonante")]
-        public async Task<ActionResult<Response<SeasonDto>>> EditDonor(EditSeasonRequest request)
+        [HttpPut("EditarSeason")]
+        public async Task<ActionResult<Response<SeasonDto>>> EditSeason(EditSeasonRequest request)
         {
-            return await _services.EditSeason(request);
+            var response = await _services.EditSeason(request);
+
+            if (!response.Success)
+            {
+                return BadRequest(response);
+            }
+
+            return Ok(response);
         }
 
-        [HttpDelete("DeleteDonnate")]
-        public async Task<ActionResult<Response<SeasonDto>>> DeleteDonor(DeleteSeasonRequest request)
+        [HttpDelete("DeleteSeason")]
+        public async Task<ActionResult<Response<SeasonDto>>> DeleteSeason(DeleteSeasonRequest request)
         {
-            return await _services.DeleteSeason(request);
+            var response = await _services.DeleteSeason(request);
+
+            if (!response.Success)
+            {
+                return BadRequest(response);
+            }
+
+            return Ok(response);
+
+
         }
 
     }

@@ -18,60 +18,90 @@ namespace Solidarize.Application.Services
 
         public async Task<Response<DonationDto>> AddDonation(AddDonationRequest request)
         {
-            if (request.Amount == 0)
+            try
             {
-                return new Response<DonationDto> { Code = 400, Messages = "El monto no puede ser 0", Succesess = false };
+                if (request.Amount == 0)
+                {
+                    return new Response<DonationDto> { Code = 400, Message = "El monto no es valido", Success = false };
+                }
+
+                await _repo.AddDonation(request);
+
+                return new Response<DonationDto> { Code = 200, Message = "Donation registrado correctamente", Success = true };
+            }
+            catch (Exception ex)
+            {
+                return new Response<DonationDto> { Code = 400, Message = ex.Message, Success = false };
             }
 
-            await _repo.AddDonation(request);
-
-            return new Response<DonationDto> { Code = 200, Messages = "Donation registrado correctamente", Succesess = true };
         }
 
         public async Task<Response<DonationDto>> DeleteDonation(DeleteDonationRequest request)
         {
-            var donationExist = await _repo.GetDonationById(request.Id);
-
-            if (donationExist is null)
+            try
             {
-                return new Response<DonationDto> { Code = 404, Messages = "No existe esa donacion" };
+                var donationExist = await _repo.GetDonationById(request.Id);
+
+                if (donationExist is null)
+                {
+                    return new Response<DonationDto> { Code = 404, Message = "No existe esa donacion" };
+                }
+
+                await _repo.DeleteDonation(donationExist);
+
+                return new Response<DonationDto> { Code = 200, Message = "Donacion eliminada correctamente", Success = true };
             }
-
-            await _repo.DeleteDonation(donationExist);
-
-            return new Response<DonationDto> { Code = 200, Messages = "Donacion eliminada correctamente", Succesess = true };
+            catch (Exception ex)
+            {
+                return new Response<DonationDto> { Code = 400, Message = ex.Message, Success = false };
+            }
         }
 
         public async Task<Response<DonationDto>> EditDonation(EditDonationRequest request)
         {
-            if (request.Amount == 0)
+            try
             {
-                return new Response<DonationDto> { Code = 400, Messages = "No existe esa donacion" };
+                if (request.Amount == 0)
+                {
+                    return new Response<DonationDto> { Code = 400, Message = "Monto no valido" };
+                }
+
+                var donorExist = await _repo.GetDonationById(request.Id);
+
+                if (donorExist is null)
+                {
+                    return new Response<DonationDto> { Code = 404, Message = "No existe esta donacion" };
+                }
+
+
+                var data = await _repo.EditDonation(request);
+
+                return new Response<DonationDto> { Code = 200, Message = "Donacion editada correctamente", Success = true, Data = data };
             }
-
-            var donorExist = await _repo.GetDonationById(request.Id);
-
-            if (donorExist is null)
+            catch (Exception ex)
             {
-                return new Response<DonationDto> { Code = 404, Messages = "No existe esta donacion" };
+                return new Response<DonationDto> { Code = 400, Message = ex.Message, Success = false };
             }
-
-
-            var data = await _repo.EditDonation(request);
-
-            return new Response<DonationDto> { Code = 200, Messages = "Donacion editada correctamente", Succesess = true, Data = data };
         }
 
         public async Task<Response<List<DonationDto>>> GetDonations()
         {
-            var donation = await _repo.GetDonations();
 
-            if (donation.Count() == 0)
+            try
             {
-                return new Response<List<DonationDto>> { Code = 404, Messages = "No hay donaciones" };
-            }
+                var donation = await _repo.GetDonations();
 
-            return new Response<List<DonationDto>> { Code = 200, Messages = "Peticion exitosa", Succesess = true, Data = donation };
+                if (donation.Count() == 0)
+                {
+                    return new Response<List<DonationDto>> { Code = 404, Message = "No hay donaciones" };
+                }
+
+                return new Response<List<DonationDto>> { Code = 200, Message = "Peticion exitosa", Success = true, Data = donation };
+            }
+            catch (Exception ex)
+            {
+                return new Response<List<DonationDto>> { Code = 400, Message = ex.Message, Success = false };
+            }
         }
     }
 }

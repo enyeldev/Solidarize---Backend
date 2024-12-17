@@ -21,25 +21,53 @@ namespace Solidarize.Controllers
         [HttpGet("ObtenerDonaciones")]
         public async Task<ActionResult<Response<List<DonationDto>>>> GetDonations()
         {
-            return await _services.GetDonations();
+           var response = await _services.GetDonations();
+
+            if (!response.Success)
+            {
+                return BadRequest(response);
+            }
+
+            return Ok(response);
         }
 
         [HttpPost("AgregarDonacion")]
         public async Task<ActionResult<Response<DonationDto>>> AddDonation(AddDonationRequest request)
         {
-            return Ok(await _services.AddDonation(request));
+            var response = await _services.AddDonation(request);
+
+            if (!response.Success)
+            {
+                return BadRequest(response);
+            }
+
+            return Ok(response);
         }
 
         [HttpPut("EditarDonacion")]
         public async Task<ActionResult<Response<DonationDto>>> EditDonor(EditDonationRequest request)
         {
-            return await _services.EditDonation(request);
+            var response = await _services.EditDonation(request);
+
+            if (!response.Success)
+            {
+                return BadRequest(response);
+            }
+
+            return Ok(response);
         }
 
         [HttpDelete("DeleteDonacion")]
         public async Task<ActionResult<Response<DonationDto>>> DeleteDonation(DeleteDonationRequest request)
         {
-            return await _services.DeleteDonation(request);
+            var response = await _services.DeleteDonation(request);
+
+            if (!response.Success)
+            {
+                return BadRequest(response);
+            }
+
+            return Ok(response);
         }
     }
 }

@@ -20,7 +20,14 @@ namespace Solidarize.Controllers
         [HttpGet("ObtenerReporte")]
         public async Task<ActionResult<Response<ReportDto>>> GetReport()
         {
-            return await _services.GenerateReport();
+            var response = await _services.GenerateReport();
+
+            if (!response.Success)
+            {
+                return BadRequest(response);
+            }
+
+            return Ok(response);
         }
 
     }

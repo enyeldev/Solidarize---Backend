@@ -9,8 +9,8 @@ namespace Solidarize.Application.Interfaces
 
         Task<Response<List<DonorDto>>> GetDonors();
 
-        Task<Response<DonorDto>> AddDonor(AddDonorRequest request);
-        Task<Response<DonorDto>> EditDonor(EditDonorRequest request);
-        Task<Response<DonorDto>> DeleteDonor(DeleteDonorRequest request);
+        Task<Response<List<DonorDto>>> AddDonor(AddDonorRequest request);
+        Task<Response<List<DonorDto>>> EditDonor(EditDonorRequest request); 
+        Task<Response<List<DonorDto>>> DeleteDonor(DeleteDonorRequest request);
     }
 }

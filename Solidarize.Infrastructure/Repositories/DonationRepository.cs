@@ -20,52 +20,110 @@ namespace Solidarize.Infrastructure.Repositories
 
         public async Task AddDonation(AddDonationRequest request)
         {
-            var donation = _mapper.Map<Donations>(request);
+            try
+            {
+                var donation = _mapper.Map<Donations>(request);
 
-            await _context.Donation.AddAsync(donation);
+                var season = await _context.Season.FirstOrDefaultAsync(e => e.Id == request.SeasonId);
 
-            //await _context.SaveChangesAsync();
+                if (season is null)
+                {
+                    throw new Exception("No existe esta campaña");
+                }
+
+                var newSeasonAmount = season.Amount + donation.Amount;
+
+                if (newSeasonAmount >= season.Goal)
+                {
+                    season.Active = false;
+                }
+
+                season.Amount = newSeasonAmount;
+
+                _context.Season.Update(season);
+
+                await _context.Donation.AddAsync(donation);
+
+                await _context.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
         }
 
         public async Task DeleteDonation(DonationDto donationDto)
         {
-            var donation = _mapper.Map<Donations>(donationDto);
-            donation.Active = false;
-            _context.Donation.Update(donation);
-            await _context.SaveChangesAsync();
+            try
+            {
+                var donation = _mapper.Map<Donations>(donationDto);
+                donation.Active = false;
+                _context.Donation.Update(donation);
+                await _context.SaveChangesAsync();
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
 
         public async Task<DonationDto> EditDonation(EditDonationRequest request)
         {
-            var donation = _mapper.Map<Donations>(request);
-            var donationEdited = _context.Donation.Update(donation);
 
-            var donationDto = _mapper.Map<DonationDto>(donation);
-            await _context.SaveChangesAsync();
+            try
+            {
+                var donation = _mapper.Map<Donations>(request);
+                var donationEdited = _context.Donation.Update(donation);
 
-            return donationDto;
+                var donationDto = _mapper.Map<DonationDto>(donation);
+                await _context.SaveChangesAsync();
+
+                return donationDto;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
+
         }
 
         public async Task<DonationDto> GetDonationById(int id)
         {
-            var donation = await _context.Donation.FirstOrDefaultAsync(e => e.Id == id);
+            try
+            {
+                var donation = await _context.Donation.FirstOrDefaultAsync(e => e.Id == id);
 
-            var donationDto = _mapper.Map<DonationDto>(donation);
+                var donationDto = _mapper.Map<DonationDto>(donation);
 
-            return donationDto;
+                return donationDto;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
 
         public async Task<List<DonationDto>> GetDonations()
         {
-            var donationDto = new List<DonationDto>();
-            var donations = await _context.Donation.Where(e => e.Active == true).ToListAsync();
-
-            foreach (var item in donations)
+            try
             {
-                donationDto.Add(_mapper.Map<DonationDto>(item));
-            }
+                var donationDto = new List<DonationDto>();
+                var donations = await _context.Donation.Where(e => e.Active == true).ToListAsync();
 
-            return donationDto;
+                foreach (var item in donations)
+                {
+                    donationDto.Add(_mapper.Map<DonationDto>(item));
+                }
+
+                return donationDto;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
     }
 }

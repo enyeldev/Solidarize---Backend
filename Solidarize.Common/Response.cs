@@ -5,10 +5,11 @@ namespace Solidarize.Common
     {
         public int Code { get; set; }
 
-        public string Messages { get; set; }
+        public string Message { get; set; }
 
-        public bool Succesess { get; set; }
+        public bool Success { get; set; }
 
         public T Data { get; set; }
+
     }
 }

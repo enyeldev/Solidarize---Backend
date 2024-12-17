@@ -4,7 +4,6 @@ using Solidarize.Common;
 using Solidarize.Common.Dto;
 using Solidarize.Common.Request;
 using Solidarize.Infrastructure.Interfaces;
-using System.Reflection.Metadata.Ecma335;
 
 namespace Solidarize.Application.Services
 {
@@ -17,66 +16,82 @@ namespace Solidarize.Application.Services
             _repo = repo;
         }
 
-        public async Task<Response<DonorDto>> AddDonor(AddDonorRequest request)
+        public async Task<Response<List<DonorDto>>> AddDonor(AddDonorRequest request)
         {
-            if (request.Name.IsNullOrEmpty() || request.Email.IsNullOrEmpty() || request.Phone.IsNullOrEmpty() || request.Addres.IsNullOrEmpty())
+            try
             {
-                return new Response<DonorDto> { Code = 400 , Messages = "Todos los campos son obligatorios" , Succesess = false};
+                if (request.Name.IsNullOrEmpty() || request.Email.IsNullOrEmpty() || request.Phone.IsNullOrEmpty() || request.Addres.IsNullOrEmpty())
+                {
+                    return new Response<List<DonorDto>> { Code = 400, Message = "Todos los campos son obligatorios", Success = false };
+                }
+
+                await _repo.AddDonor(request);
+
+                var donorsDtoList = await _repo.GetDonors();
+
+                return new Response<List<DonorDto>> { Code = 200, Message = "Donante registrado correctamente", Success = true, Data = donorsDtoList };
+            } catch (Exception ex)
+            {
+                return new Response<List<DonorDto>> { Code = 400, Message = ex.Message, Success = false };
             }
-
-            await _repo.AddDonor(request);
-
-            return new Response<DonorDto> { Code = 200, Messages = "Donante registrado correctamente", Succesess = true };
 
         }
 
-        public async Task<Response<DonorDto>> DeleteDonor(DeleteDonorRequest request)
-        {
-            var donorExist = await _repo.GetDonorById(request.Id);
-
-            if (donorExist is null)
+        public async Task<Response<List<DonorDto>>> DeleteDonor(DeleteDonorRequest request)
+        {           
+            try
             {
-                return new Response<DonorDto> { Code = 404, Messages = "No existe ese donante" };
+                await _repo.DeleteDonor(request);
+
+                var donorsDtoList = await _repo.GetDonors();
+
+                return new Response<List<DonorDto>> { Code = 200, Message = "Donante eliminado correctamente", Success = true, Data = donorsDtoList };
+
+            } catch (Exception ex)
+            {
+                return new Response<List<DonorDto>> { Code = 400, Message = ex.Message, Success = false };
             }
-
-            await _repo.DeleteDonor(donorExist);
-
-            return new Response<DonorDto> { Code = 200, Messages = "Donante eliminado correctamente", Succesess = true };
-    
         }
 
-        public async Task<Response<DonorDto>> EditDonor(EditDonorRequest request)
+        public async Task<Response<List<DonorDto>>> EditDonor(EditDonorRequest request)
         {
 
-            if (request.Name.IsNullOrEmpty() || request.Phone.IsNullOrEmpty() || request.Email.IsNullOrEmpty() || request.Addres.IsNullOrEmpty())
+            try
             {
-                return new Response<DonorDto> { Code = 400, Messages = "Todos los campos son obligatorios" };
-            }
+                if (request.Name.IsNullOrEmpty() || request.Phone.IsNullOrEmpty() || request.Email.IsNullOrEmpty() || request.Addres.IsNullOrEmpty())
+                {
+                    return new Response<List<DonorDto>> { Code = 400, Message = "Todos los campos son obligatorios" };
+                }
 
-            var donorExist = await _repo.GetDonorById(request.Id);
+                
+                await _repo.EditDonor(request);
 
-            if (donorExist is null)
+                var donorsDtoList = await _repo.GetDonors();
+
+                return new Response<List<DonorDto>> { Code = 200, Message = "Donante editado correctamente", Success = true, Data = donorsDtoList };
+            } catch (Exception ex) 
             {
-                return new Response<DonorDto> { Code = 404, Messages = "No existe este donante" };
+                return new Response<List<DonorDto>> { Code = 400, Message = ex.Message, Success = false };
             }
-
-
-            var data = await _repo.EditDonor(request);
-
-            return new Response<DonorDto> { Code = 200, Messages = "Donante editado correctamente", Succesess = true, Data = data };
 
         }
 
         public async Task<Response<List<DonorDto>>> GetDonors()
         {
-            var donors = await _repo.GetDonors();
-
-            if (donors.Any())
+            try
             {
-                return new Response<List<DonorDto>> { Code = 404, Messages = "No hay donnates" };
-            }
+                var donors = await _repo.GetDonors();
 
-            return new Response<List<DonorDto>> { Code = 200, Messages = "Lista de donantes", Succesess = true, Data = donors };
+                if (donors.Count() == 0)
+                {
+                    return new Response<List<DonorDto>> { Code = 404, Message = "No hay donnates" };
+                }
+
+                return new Response<List<DonorDto>> { Code = 200, Message = "Lista de donantes", Success = true, Data = donors };
+            } catch (Exception ex)
+            {
+                return new Response<List<DonorDto>> { Code = 400, Message = ex.Message, Success = false };
+            }
 
         }
     }

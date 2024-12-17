@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Solidarize.Application.Interfaces;
 using Solidarize.Common;
 using Solidarize.Common.Dto;
@@ -22,26 +21,53 @@ namespace Solidarize.Controllers
         [HttpGet("ObtenerDonantes")]
         public async Task<ActionResult<Response<List<DonorDto>>>> GetDonors()
         {
-            return await _services.GetDonors();
+            var response = await _services.GetDonors();
+
+            if (!response.Success)
+            {
+                return BadRequest(response);
+            }
+
+            return Ok(response);
         }
 
 
         [HttpPost("AgregarDonante")]
         public async Task<ActionResult<Response<DonorDto>>> AddDonor(AddDonorRequest request)
         {
-            return await _services.AddDonor(request);
+            var response = await _services.AddDonor(request);
+
+            if (!response.Success)
+            {
+                return BadRequest(response);
+            }
+
+            return Ok(response);
         }
 
         [HttpPut("EditarDonante")]
         public async Task<ActionResult<Response<DonorDto>>> EditDonor(EditDonorRequest request)
         {
-            return await _services.EditDonor(request);
+            var response = await _services.EditDonor(request);
+
+            if (!response.Success)
+            {
+                return BadRequest(response);
+            }
+
+            return Ok(response);
         }
 
         [HttpDelete("DeleteDonnate")]
         public async Task<ActionResult<Response<DonorDto>>> DeleteDonor(DeleteDonorRequest request)
         {
-            return await _services.DeleteDonor(request);
+            var response = await _services.DeleteDonor(request);
+            if (!response.Success)
+            {
+                return BadRequest(response);
+            }
+
+            return Ok(response);
         }
 
     }

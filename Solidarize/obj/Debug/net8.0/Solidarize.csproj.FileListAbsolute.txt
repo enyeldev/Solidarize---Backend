@@ -152,3 +152,4 @@ C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal
 C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize\bin\Debug\net8.0\Solidarize.Common.pdb
 C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize\bin\Debug\net8.0\Solidarize.Persistence.pdb
 C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize\bin\Debug\net8.0\Solidarize.Infrastructure.pdb
+C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize\obj\Debug\net8.0\Solidarize.sourcelink.json

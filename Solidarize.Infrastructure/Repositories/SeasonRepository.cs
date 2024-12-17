@@ -20,52 +20,83 @@ namespace Solidarize.Infrastructure.Repositories
 
         public async Task AddSeason(AddSeasonRequest request)
         {
-            var season = _mapper.Map<Seasons>(request);
+            try
+            {
+                var season = _mapper.Map<Seasons>(request);
 
-            await _context.Season.AddAsync(season);
+                await _context.Season.AddAsync(season);
 
-            //await _context.SaveChangesAsync();
+                await _context.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
 
         public async Task DeleteSeason(SeasonDto seasonDto)
         {
-            var season = _mapper.Map<Seasons>(seasonDto);
-            season.Active = false;
-            _context.Season.Update(season);
-            await _context.SaveChangesAsync();
+            try
+            {
+                var season = _mapper.Map<Seasons>(seasonDto);
+                season.Active = false;
+                _context.Season.Update(season);
+                await _context.SaveChangesAsync();
+            } catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
 
         public async Task<SeasonDto> EditSeason(EditSeasonRequest request)
         {
-            var season = _mapper.Map<Seasons>(request);
-            var seasonEdited = _context.Season.Update(season);
+            try
+            {
+                var season = _mapper.Map<Seasons>(request);
+                var seasonEdited = _context.Season.Update(season);
 
-            var seasonDto = _mapper.Map<SeasonDto>(season);
-            await _context.SaveChangesAsync();
+                var seasonDto = _mapper.Map<SeasonDto>(season);
+                await _context.SaveChangesAsync();
 
-            return seasonDto;
+                return seasonDto;
+            } catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
 
         public async Task<List<SeasonDto>> GetSeasons()
         {
-            var seasonDto = new List<SeasonDto>();
-            var seasons = await _context.Season.Where(e => e.Active == true).ToListAsync();
-
-            foreach (var item in seasons)
+            try
             {
-                seasonDto.Add(_mapper.Map<SeasonDto>(item));
-            }
+                var seasonDto = new List<SeasonDto>();
+                var seasons = await _context.Season.Where(e => e.Active == true).ToListAsync();
 
-            return seasonDto;
+                foreach (var item in seasons)
+                {
+                    seasonDto.Add(_mapper.Map<SeasonDto>(item));
+                }
+
+                return seasonDto;
+            } catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
 
         public async Task<SeasonDto> GetSeasonById(int id)
         {
-            var season = await _context.Season.FirstOrDefaultAsync(e => e.Id == id);
+            try
+            {
+                var season = await _context.Season.FirstOrDefaultAsync(e => e.Id == id);
 
-            var seasonDto = _mapper.Map<SeasonDto>(season);
+                var seasonDto = _mapper.Map<SeasonDto>(season);
 
-            return seasonDto;
+                return seasonDto;
+            } catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
     }
 }

@@ -12,9 +12,9 @@ namespace Solidarize.Infrastructure.Interfaces
 
         Task<DonorDto> GetDonorById(int id);
 
-        Task<DonorDto> EditDonor(EditDonorRequest request);
+        Task EditDonor(EditDonorRequest request);
 
-        Task DeleteDonor(DonorDto donorDto);
+        Task DeleteDonor(DeleteDonorRequest request);
 
     }
 }

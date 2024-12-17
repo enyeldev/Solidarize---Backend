@@ -21,3 +21,4 @@ C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal
 C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Application\bin\Debug\net8.0\Solidarize.Domain.pdb
 C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Application\bin\Debug\net8.0\Solidarize.Persistence.pdb
 C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Application\obj\Debug\net8.0\Solidari.E28E75F4.Up2Date
+C:\Users\medra\Documents\Clases\C-5\Programacion II\Proyecto Final\proyectoFinal - Api\Solidarize\Solidarize.Application\obj\Debug\net8.0\Solidarize.Application.sourcelink.json
